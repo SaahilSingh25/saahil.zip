@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -25,9 +26,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-primary text-textmain min-h-screen`}
       >
-        {children}
+        <nav className="w-full flex items-center justify-between px-8 py-4 bg-primary text-textmain shadow-md border-b border-bordermain/60">
+          <span className="text-3xl font-extrabold tracking-wide text-accent">Saahil</span>
+          <ul className="flex gap-6 text-lg font-medium">
+            <li><a href="/" className="px-4 py-2 rounded hover:text-accent transition-colors">Home</a></li>
+            <li><a href="/music" className="px-4 py-2 rounded hover:text-accent transition-colors">Music</a></li>
+            <li><a href="/coding" className="px-4 py-2 rounded hover:text-accent transition-colors">Coding</a></li>
+            <li><a href="/wip" className="px-4 py-2 rounded hover:text-accent transition-colors">WIP</a></li>
+          </ul>
+        </nav>
+        <main className="max-w-4xl mx-auto w-full px-4 py-12">
+          {children}
+        </main>
       </body>
     </html>
   );

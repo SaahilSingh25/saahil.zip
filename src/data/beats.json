@@ -1,0 +1,34 @@
+[
+  {
+    "id": "novacane",
+    "title": "Novacane",
+    "cover": "/images/novacane.jpg",
+    "audio": "/audio/novacane.mp3",
+    "bpm": 123,
+    "key": "C# minor",
+    "tags": ["experimental", "frank ocean type beat"],
+    "price": 30,
+    "licenses": [
+      { "type": "MP3", "price": 30 },
+      { "type": "WAV", "price": 50 },
+      { "type": "WAV + Trackout", "price": 80 },
+      { "type": "Exclusive", "price": null }
+    ]
+  },
+  {
+    "id": "optimus",
+    "title": "Optimus",
+    "cover": "/images/optimus.jpg",
+    "audio": "/audio/optimus.mp3",
+    "bpm": 164,
+    "key": "F minor",
+    "tags": ["kanye west", "trap"],
+    "price": 30,
+    "licenses": [
+      { "type": "MP3", "price": 30 },
+      { "type": "WAV", "price": 50 },
+      { "type": "WAV + Trackout", "price": 80 },
+      { "type": "Exclusive", "price": null }
+    ]
+  }
+] 
